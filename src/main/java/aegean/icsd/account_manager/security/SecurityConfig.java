@@ -1,4 +1,4 @@
-package aegean.icsd.account_manager.config;
+package aegean.icsd.account_manager.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

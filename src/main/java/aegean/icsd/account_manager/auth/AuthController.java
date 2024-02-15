@@ -19,18 +19,18 @@ public class AuthController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<Void> register(@Valid @RequestBody RegisterRequest request){
+    public ResponseEntity<AuthResponse> register(@Valid @RequestBody RegisterRequest request){
 
-        Integer userID=this.authService.registerUser(request);
+        AuthResponse availableUsers=this.authService.registerUser(request);
 
-        return new ResponseEntity<>(HttpStatus.CREATED);
+        return new ResponseEntity<>(availableUsers, HttpStatus.CREATED);
     }
 
     @PostMapping("/login")
-    public ResponseEntity<Void> login(@Valid @RequestBody LoginRequest request){
+    public ResponseEntity<AuthResponse> login(@Valid @RequestBody LoginRequest request){
 
-        this.authService.loginUser(request);
+        AuthResponse availableUsers=this.authService.loginUser(request);
 
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<>(availableUsers, HttpStatus.OK);
     }
 }

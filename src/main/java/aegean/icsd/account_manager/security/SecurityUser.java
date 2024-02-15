@@ -1,6 +1,6 @@
 package aegean.icsd.account_manager.security;
 
-import aegean.icsd.account_manager.entities.Account;
+import aegean.icsd.account_manager.account.Account;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 

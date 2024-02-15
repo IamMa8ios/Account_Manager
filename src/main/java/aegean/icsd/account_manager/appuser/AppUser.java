@@ -1,6 +1,8 @@
-package aegean.icsd.account_manager.entities;
+package aegean.icsd.account_manager.appuser;
 
 
+import aegean.icsd.account_manager.account.Account;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,6 +20,7 @@ public class AppUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @JsonIgnore
     @ManyToOne
     private Account account;
     private String username;
@@ -29,4 +32,5 @@ public class AppUser {
         this.username = username;
         this.role = role;
     }
+
 }

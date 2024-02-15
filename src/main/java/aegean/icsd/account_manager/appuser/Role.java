@@ -1,4 +1,4 @@
-package aegean.icsd.account_manager.entities;
+package aegean.icsd.account_manager.appuser;
 
 public enum Role {
 

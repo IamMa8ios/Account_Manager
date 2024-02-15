@@ -1,4 +1,4 @@
-package aegean.icsd.account_manager.user;
+package aegean.icsd.account_manager.appuser;
 
 import aegean.icsd.account_manager.security.SecurityUser;
 import lombok.RequiredArgsConstructor;

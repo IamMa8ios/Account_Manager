@@ -1,6 +1,6 @@
-package aegean.icsd.account_manager.config;
+package aegean.icsd.account_manager.auth;
 
-import aegean.icsd.account_manager.user.JpaUserDetailsService;
+import aegean.icsd.account_manager.appuser.JpaUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,6 +1,7 @@
-package aegean.icsd.account_manager.entities;
+package aegean.icsd.account_manager.account;
 
 
+import aegean.icsd.account_manager.appuser.AppUser;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -33,4 +34,5 @@ public class Account {
         this.email = email;
         this.password = password;
     }
+
 }
