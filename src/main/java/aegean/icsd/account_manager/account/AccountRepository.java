@@ -1,4 +1,4 @@
-package aegean.icsd.account_manager.appuser;
+package aegean.icsd.account_manager.account;
 
 import aegean.icsd.account_manager.account.Account;
 import org.springframework.data.jpa.repository.JpaRepository;

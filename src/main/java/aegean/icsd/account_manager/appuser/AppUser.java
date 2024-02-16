@@ -20,7 +20,6 @@ public class AppUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @JsonIgnore
     @ManyToOne
     private Account account;
     private String username;

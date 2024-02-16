@@ -14,10 +14,8 @@ public class AppUserService {
     public void createAppUser(CreateUserRequest request){
 
         AppUser appUser = new AppUser(request.account(), request.username(), request.role());
-        appUserRepository.save(appUser);
+        this.appUserRepository.save(appUser);
 
     }
-
-
 
 }

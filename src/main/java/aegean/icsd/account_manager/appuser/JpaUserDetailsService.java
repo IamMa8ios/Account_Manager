@@ -1,5 +1,6 @@
 package aegean.icsd.account_manager.appuser;
 
+import aegean.icsd.account_manager.account.AccountRepository;
 import aegean.icsd.account_manager.security.SecurityUser;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
