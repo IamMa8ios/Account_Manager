@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.Set;
 
 @Getter
@@ -16,7 +17,7 @@ import java.util.Set;
 @Table(name = "accounts", uniqueConstraints = {
         @UniqueConstraint(columnNames = {"email"}, name = "accounts_email_key")
 })
-public class Account {
+public class Account implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

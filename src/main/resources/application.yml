@@ -11,3 +11,10 @@ spring:
         format_sql: true
     hibernate:
       ddl-auto: update
+
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+        security: TRACE

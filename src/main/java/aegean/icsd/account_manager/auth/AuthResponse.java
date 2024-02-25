@@ -1,7 +1,6 @@
 package aegean.icsd.account_manager.auth;
 
-import aegean.icsd.account_manager.appuser.AppUser;
-import aegean.icsd.account_manager.appuser.AppUserDTO;
+import aegean.icsd.account_manager.appuser.dto.AppUserDTO;
 
 import java.util.Set;
 

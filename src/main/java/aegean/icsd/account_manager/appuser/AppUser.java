@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 @Getter
 @Setter
 @Entity
@@ -15,7 +17,7 @@ import lombok.Setter;
 @Table(name = "app_users", uniqueConstraints = {
         @UniqueConstraint(columnNames = {"email"}, name = "accounts_email_key")
 })
-public class AppUser {
+public class AppUser implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

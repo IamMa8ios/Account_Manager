@@ -1,6 +1,7 @@
-package aegean.icsd.account_manager.appuser;
+package aegean.icsd.account_manager.appuser.dto;
 
-import org.springframework.stereotype.Component;
+import aegean.icsd.account_manager.appuser.AppUser;
+import aegean.icsd.account_manager.appuser.dto.AppUserDTO;
 
 import java.util.function.Function;
 

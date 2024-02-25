@@ -7,7 +7,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public record SecurityUser(Account user) implements UserDetails {
+public record SecurityUser(Account account) implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -16,12 +16,12 @@ public record SecurityUser(Account user) implements UserDetails {
 
     @Override
     public String getPassword() {
-        return user.getPassword();
+        return account.getPassword();
     }
 
     @Override
     public String getUsername() {
-        return user.getEmail();
+        return account.getEmail();
     }
 
     @Override
